@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+// A stateless widget to display confirmation details.
 class ConfirmationScreen extends StatelessWidget {
   final String name;
   final String email;
   final String phone;
 
+// Constructor to receive required user details
   const ConfirmationScreen({
     super.key,
     required this.name,
@@ -15,7 +17,7 @@ class ConfirmationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightGreen.shade50,  // Custom background color
+      backgroundColor: Colors.lightGreen.shade50,
       appBar: AppBar(title: const Text("Confirmation Screen")),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -31,8 +33,8 @@ class ConfirmationScreen extends StatelessWidget {
               Navigator.pop(context);
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.deepOrange,      // Custom button background color
-              foregroundColor: Colors.white,     // Custom text color
+              backgroundColor: Colors.deepOrange,
+              foregroundColor: Colors.white,
             ),
             child: const Text("Go Back"),
           ),
