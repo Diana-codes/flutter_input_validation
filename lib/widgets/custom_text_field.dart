@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// A reusable custom text field widget
 class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final String labelText;
@@ -7,7 +8,7 @@ class CustomTextField extends StatelessWidget {
   final TextInputType keyboardType;
   final bool obscureText;
 
-  // Constructor
+// Constructor with required and optional parameters
   CustomTextField({
     required this.controller,
     required this.labelText,
